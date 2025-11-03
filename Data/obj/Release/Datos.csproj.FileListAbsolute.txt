@@ -1,0 +1,12 @@
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\bin\Release\Data.dll.config
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\bin\Release\Data.dll
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\bin\Release\Data.pdb
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\bin\Release\EntityFramework.dll
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\bin\Release\EntityFramework.xml
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\obj\Release\Datos.csproj.AssemblyReference.cache
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\obj\Release\Datos.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\obj\Release\Datos.csproj.Up2Date
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\obj\Release\Data.dll
+C:\Users\valer\source\repos\CasaTequileraElBarrilito\Data\obj\Release\Data.pdb
