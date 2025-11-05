@@ -81,17 +81,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="ModelCasaTequilera.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelCasaTequilera.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="ModelCasaTequilera.edmx.diagram">
       <DependentUpon>ModelCasaTequilera.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ModelCasaTequilera.Context.tt">
@@ -104,9 +105,6 @@
       <DependentUpon>ModelCasaTequilera.edmx</DependentUpon>
       <LastGenOutput>ModelCasaTequilera.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -4,10 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="edab23af3a9541b1b4affdebefec0bf7" Name="Diagram1">
+      <Diagram DiagramId="88b4d25031554daba0be2d3ca62b8ec4" Name="Diagram1">
         <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Rol" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Seccion" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Usuario" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Usuario" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
         <AssociationConnector Association="CasaTequileraBarrilitoModel.IdSeccion" ManuallyRouted="false" />
         <AssociationConnector Association="CasaTequileraBarrilitoModel.IdUsuario" ManuallyRouted="false" />
       </Diagram>

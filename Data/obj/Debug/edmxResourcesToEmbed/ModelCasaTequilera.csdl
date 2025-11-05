@@ -53,7 +53,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="CasaTequileraBarrilitoEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="CasaTequileraBarrilitoEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Rol" EntityType="Self.Rol" />
     <EntitySet Name="Seccion" EntityType="Self.Seccion" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" />

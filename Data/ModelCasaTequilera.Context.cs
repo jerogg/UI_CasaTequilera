@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Datos
+namespace Data
 {
     using System;
     using System.Data.Entity;
@@ -15,8 +15,8 @@ namespace Datos
     
     public partial class CasaTequileraBarrilitoEntities : DbContext
     {
-        public CasaTequileraBarrilitoEntities(string connectionString) 
-            : base("connectionString")
+        public CasaTequileraBarrilitoEntities()
+            : base("name=CasaTequileraBarrilitoEntities")
         {
         }
     

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Configuration;
@@ -9,7 +10,7 @@ namespace Datos
 {
     public class ConexionABaseDeDatos
     {
-        CasaTequileraBarrilitoEntities casaTequileraBarrilitoEntities = new CasaTequileraBarrilitoEntities ("Server= VALERIA; Database= CasaTequileraElBarrilito; Integrated Security=True;");
+        CasaTequileraBarrilitoEntities casaTequileraBarrilitoEntities = new CasaTequileraBarrilitoEntities ();
         public List<string> ObtenerUsuarios()
         {
             List<string> nombresUsuarios = new List<string> ();
