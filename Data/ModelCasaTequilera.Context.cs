@@ -13,10 +13,10 @@ namespace Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CasaTequileraBarrilitoEntities : DbContext
+    public partial class CasaTequileraBarrilitoEntities1 : DbContext
     {
-        public CasaTequileraBarrilitoEntities()
-            : base("name=CasaTequileraBarrilitoEntities")
+        public CasaTequileraBarrilitoEntities1()
+            : base("name=CasaTequileraBarrilitoEntities1")
         {
         }
     

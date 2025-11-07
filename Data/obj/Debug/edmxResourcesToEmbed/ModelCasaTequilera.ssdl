@@ -22,7 +22,7 @@
     <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Nombre_Corto" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Contrasenia" Type="binary" MaxLength="16" Nullable="false" />
+    <Property Name="Contrasenia" Type="nvarchar" MaxLength="16" Nullable="false" />
     <Property Name="Foto" Type="varbinary(max)" Nullable="false" />
   </EntityType>
   <Association Name="IdSeccion">

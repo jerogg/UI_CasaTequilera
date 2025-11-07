@@ -24,3 +24,4 @@ C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.exe.config
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Ventas.resources

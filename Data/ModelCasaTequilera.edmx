@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CasaTequileraBarrilitoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CasaTequileraBarrilitoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Rol">
           <Key>
             <PropertyRef Name="IdRol" />
@@ -27,7 +27,7 @@
           <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Nombre_Corto" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Contrasenia" Type="binary" MaxLength="16" Nullable="false" />
+          <Property Name="Contrasenia" Type="nvarchar" MaxLength="16" Nullable="false" />
           <Property Name="Foto" Type="varbinary(max)" Nullable="false" />
         </EntityType>
         <Association Name="IdSeccion">
@@ -67,8 +67,7 @@
             <End Role="Rol" EntitySet="Rol" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CasaTequileraBarrilitoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -80,7 +79,7 @@
           <Property Name="IdUsuario" Type="Int32" Nullable="false" />
           <Property Name="IdSeccion" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Seccion" Relationship="Self.IdSeccion" FromRole="Rol" ToRole="Seccion" />
-          <NavigationProperty Name="Usuario" Relationship="Self.IdUsuario" FromRole="Rol" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario" Relationship="CasaTequileraBarrilitoModel.IdUsuario" FromRole="Rol" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="Seccion">
           <Key>
@@ -89,17 +88,6 @@
           <Property Name="IdSeccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Rol" Relationship="Self.IdSeccion" FromRole="Seccion" ToRole="Rol" />
-        </EntityType>
-        <EntityType Name="Usuario">
-          <Key>
-            <PropertyRef Name="IdUsuario" />
-          </Key>
-          <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Nombre_Corto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Contrasenia" Type="Binary" MaxLength="16" FixedLength="true" Nullable="false" />
-          <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
-          <NavigationProperty Name="Rol" Relationship="Self.IdUsuario" FromRole="Usuario" ToRole="Rol" />
         </EntityType>
         <Association Name="IdSeccion">
           <End Role="Seccion" Type="Self.Seccion" Multiplicity="1" />
@@ -113,9 +101,33 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityContainer Name="CasaTequileraBarrilitoEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Rol" EntityType="Self.Rol" />
+          <EntitySet Name="Seccion" EntityType="Self.Seccion" />
+          <AssociationSet Name="IdSeccion" Association="Self.IdSeccion">
+            <End Role="Seccion" EntitySet="Seccion" />
+            <End Role="Rol" EntitySet="Rol" />
+          </AssociationSet>
+          <EntitySet Name="Usuario" EntityType="CasaTequileraBarrilitoModel.Usuario" />
+          <AssociationSet Name="IdUsuario" Association="CasaTequileraBarrilitoModel.IdUsuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Rol" EntitySet="Rol" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nombre_Corto" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Contrasenia" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Name="Foto" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="Rol" Relationship="CasaTequileraBarrilitoModel.IdUsuario" FromRole="Usuario" ToRole="Rol" />
+        </EntityType>
         <Association Name="IdUsuario">
-          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
-          <End Role="Rol" Type="Self.Rol" Multiplicity="*" />
+          <End Type="CasaTequileraBarrilitoModel.Usuario" Role="Usuario" Multiplicity="1" />
+          <End Type="CasaTequileraBarrilitoModel.Rol" Role="Rol" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Usuario">
               <PropertyRef Name="IdUsuario" />
@@ -125,19 +137,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CasaTequileraBarrilitoEntities1" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Rol" EntityType="Self.Rol" />
-          <EntitySet Name="Seccion" EntityType="Self.Seccion" />
-          <EntitySet Name="Usuario" EntityType="Self.Usuario" />
-          <AssociationSet Name="IdSeccion" Association="Self.IdSeccion">
-            <End Role="Seccion" EntitySet="Seccion" />
-            <End Role="Rol" EntitySet="Rol" />
-          </AssociationSet>
-          <AssociationSet Name="IdUsuario" Association="Self.IdUsuario">
-            <End Role="Usuario" EntitySet="Usuario" />
-            <End Role="Rol" EntitySet="Rol" />
-          </AssociationSet>
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -164,11 +163,11 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="CasaTequileraBarrilitoModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
-                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
-                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
-                <ScalarProperty Name="Nombre_Corto" ColumnName="Nombre_Corto" />
-                <ScalarProperty Name="Contrasenia" ColumnName="Contrasenia" />
                 <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="Contrasenia" ColumnName="Contrasenia" />
+                <ScalarProperty Name="Nombre_Corto" ColumnName="Nombre_Corto" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

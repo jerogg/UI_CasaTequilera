@@ -7,9 +7,9 @@
       <Diagram DiagramId="88b4d25031554daba0be2d3ca62b8ec4" Name="Diagram1">
         <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Rol" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Seccion" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Usuario" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
         <AssociationConnector Association="CasaTequileraBarrilitoModel.IdSeccion" ManuallyRouted="false" />
-        <AssociationConnector Association="CasaTequileraBarrilitoModel.IdUsuario" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Usuario" Width="1.5" PointX="0.75" PointY="3.875" />
+        <AssociationConnector Association="CasaTequileraBarrilitoModel.IdUsuario" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
