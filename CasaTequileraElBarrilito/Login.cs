@@ -45,11 +45,12 @@ namespace CasaTequileraElBarrilito
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            
             string usuario = cbxUsuario.Text;
             string contraseña = txtContrasena.Text;
 
@@ -58,14 +59,15 @@ namespace CasaTequileraElBarrilito
             if (acceso)
             {
                 MessageBox.Show("Inicio de sesión correcto");
-                //this.Close();
                 Ventas ventas = new Ventas();
                 ventas.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos");
             }
+            
         }
 
         private void pbxLogo_Click(object sender, EventArgs e)
