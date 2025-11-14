@@ -15,7 +15,7 @@ namespace CasaTequileraElBarrilito
         public Ventas()
         {
             InitializeComponent();
-            Login.Close();
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -56,6 +56,12 @@ namespace CasaTequileraElBarrilito
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnConfig_Click(object sender, EventArgs e)
+        {
+            Configuracion configuracion = new Configuracion();
+            configuracion.Show();
         }
     }
 }

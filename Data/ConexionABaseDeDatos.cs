@@ -11,19 +11,19 @@ namespace Datos
     public class ConexionABaseDeDatos
     {
         CasaTequileraBarrilitoEntities1 casaTequileraBarrilitoEntities = new CasaTequileraBarrilitoEntities1();
-        public List<string> ObtenerUsuarios()
+        public List<Usuario> ObtenerUsuarios()
         {
-            List<string> nombresUsuarios = new List<string> ();
+            List<Usuario> usuarios = new List<Usuario> ();
             try
             {
-                nombresUsuarios = casaTequileraBarrilitoEntities.Usuario.Select(x => x.Nombre_Corto).ToList();
+                usuarios = casaTequileraBarrilitoEntities.Usuario.ToList();
             }
             catch (Exception ex) {
 
                 throw ex;
             }
 
-            return nombresUsuarios;
+            return usuarios;
         }
 
         public bool ValidarUsuario(string nombre, string contrasena)
@@ -39,6 +39,48 @@ namespace Datos
             catch (Exception ex)
             {
                 
+                throw ex;
+            }
+
+            return resultado;
+        }
+
+        public bool GuardarUsuario(string nombre, string contrasenia, string nombreCompleto, byte[] foto)
+        {
+            bool resultado = false;
+            try
+            {
+                Usuario nuevoUsuario = new Usuario();
+                nuevoUsuario.Nombre = nombreCompleto;
+                nuevoUsuario.Contrasenia = contrasenia;
+                nuevoUsuario.Nombre_Corto = nombre;
+                nuevoUsuario.Foto = foto;
+
+                casaTequileraBarrilitoEntities.Usuario.Add(nuevoUsuario);
+                casaTequileraBarrilitoEntities.SaveChanges();
+                resultado = true;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return resultado;
+        }
+        public bool EliminarUsuario(string id)
+        {
+            bool resultado = false;
+            try
+            {
+                //aqui la conversion de la contrasenia a byte[]
+                //byte[] contraseniaBytes = Encoding.UTF8.GetBytes(contrasena);
+
+                //resultado = casaTequileraBarrilitoEntities.Usuario.Select(x => x.Nombre_Corto == nombre && x.Contrasenia == contrasena).First();
+            }
+            catch (Exception ex)
+            {
+
                 throw ex;
             }
 

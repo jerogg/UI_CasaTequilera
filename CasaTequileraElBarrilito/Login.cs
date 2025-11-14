@@ -58,7 +58,6 @@ namespace CasaTequileraElBarrilito
 
             if (acceso)
             {
-                MessageBox.Show("Inicio de sesión correcto");
                 Ventas ventas = new Ventas();
                 ventas.Show();
                 this.Hide();
