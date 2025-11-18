@@ -117,4 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Nombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="IdUsuario.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Foto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 58</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pbxFotoUsuarios.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAABixJREFUWEe9l2tPE1kcxv0GmvjOoAlqYnxhSEioGiWOCisSFrpo6BIhkGA2IGRD
+        DARkZN3SRQQBHZaFQpUV13AtBbbAIttambZQqKVcSu+F0kJpO73MfIPNdLA7PW2huGZ/mVfPc848c2bO
+        5T9HiMOwa1AZ379e/r1qoeWejH1bWntzriFb1VGyzm/aWpzyYU6wQ3SOgEIk/B63WfxO0ZyLwtA+l/TJ
+        N2v9dU7zKtg/EgcH25TT8w13qFvL2GkrvTWW2UG7+oPTqHZvru9o5rYWJnXjyEJL3t4TPL6+zm88cPT7
+        BeN+3/rwM+p28w3ZG1I+7vOCjWg4TcvLPZVUe8Xz710bGrAFjajBuM+r/nwXraDF73GDLaKwvTIr/yUT
+        hSE5J8NpVIP2Z6IGr/XXUamW2QHQOwj3loGaEHP1TMxuBu0AkYM3ZYLA17phVQhBLzY8DutCyz0UhlQd
+        JTjuB+2IwZ6dTRk7HYUhs/gP0DsMmM0k52SQ70zSB3oRgzWD9eSTcstA4/Bsyseojx0+ycFgj2NLWpuC
+        wtCuYQmwALQjzXMN2Z4dK2iEsviygHx5oreADgabZnrI4XY+APRwlG1FKAxtr6KgEcoGOozC0GJrPqCD
+        waqOEhSGNtAhQA8nxmCf20G9QsxmpOshwbjfJ629STayW+h6RGIMJgfDLUVhyDo3ThdDgj0OK7n4njLp
+        YjRiD9aNtqIwpJ/ooIshwe4tAwpDyrYiuhhkQ8o3THGD19zT71AYWutjBxXjNM9t1YPdCMIi6aO2P7oY
+        GmzVRwt2bWrDj6PwSzNYD/YkCOv8n6Q11EAXQ4IxuxmFoYWWe3QxiPnDu/1HbJjiujbWwW7kPjiCwtA6
+        v4kuhgR7nTvk2ffzLboYjdi/sWGKi8KQbhyhi6GzGselT26Rs3orZOpHJPbglTfV4RsnuI6Xun8k1/Hs
+        V1vHuM8rqyN3fqd5ha6DwWbx28BGXQro4cQYbFO+J+uIxhxAB4O9u3bpT6nkXq1XAhaAYbJT0cTy7tpB
+        I5RP7T+gMGSc5gE6GEwQBFXuqDpKQOPwWOeFgUrttte1DVgRgj0OK3Uem/5+A3qHAbOb5ZxvIx5NkYPJ
+        lSclVx76+IZdLQa92PBhzsWXhSgMffqtGPf7QDtaMFlz9bGpUtm+JAK9g/A67dSnnavPwmwm0A4QNZis
+        Ml9XBMZ9XS/81e/FwBZR2F6ZnX9G1uFyTsauMWo1ETWYyqbKoEBdfWdTJoj40oI4jUt7z/pf6uogWwtT
+        1LZMvrqGbO3I8035qNO0jNlMmM3ktuptqhnDVJeq88HeUUH+STSFF1kABweT/06Yyyx6q2hihR9H9Ev6
+        5NbaAGf/gQaJKTjIrk5p/Iu33FO50JxL/S3ON2SrOku1I0025bQfc4EdonO44K/IXrDZbBYIBKD5RSAI
+        AsMwqIaxF1xZWRkXF6dUKnEcn56e5vP5MpkMRVGVSqXT6TQazcjIiDsAn88fHR3VaDRSqXRwcNDhcGi1
+        2rW1NbGY3GosFsuxY8f6+/u3t7eHh4d1Op3NZrt69erHjx/9fr9QKJTL5f8G4zh+4cKFrq6uqqqqsbGx
+        u3fvZmRkcLncixcvslgssVickJDQ2NiYn59fUVHB4XDi4+NXV1d5PN7Dhw/v37+PIEhCQsKrV68IgpBI
+        JMePHxcKhcnJyWw2+9y5c6OjoydOnBgaGqquri4sLLx06dLMzMxesEgkOnr0aFJS0tmzZ9VqdWJiYmZm
+        psFgYDAYGo1GJpOdPHmyqKiorq6Ox+OlpaXl5ubq9frLly/n5+dnZWUhCFJTU0ONw+v1njp1iiCIuLg4
+        HMeTk5NFItH58+cJgkhPT5dIJI8ePUIQshQhg4uLizs7OwmCgCCou7v7zJkzTCZzfHycwWBotVoMw1JT
+        U3Nycl68eNHe3p6UlMRisSYnJ0+fPl1QUMBkMhEEqa2tBYLLysquXbuWkpLidrvj4+PLy8t7e3sZDEZi
+        YqJGQ643cFaXl5c3BygtDakFXC4XjuNXrlyZmJjIy8sbGBjAMMzvj/D/GcTt3vuX93q9Ho+HPK8wDMdx
+        SgSDLRZLW1tbT0+P0xlh61EoFK2trQKBINj/iwGD/zf+AXdfqOhWwD79AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

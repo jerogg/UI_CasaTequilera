@@ -19,12 +19,7 @@ namespace CasaTequileraElBarrilito
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cajeros_Load(object sender, EventArgs e)
+        private void Usuarios_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'casaTequileraBarrilitoDataSet.Usuario' Puede moverla o quitarla según sea necesario.
             CargaUsuarios();
@@ -33,72 +28,50 @@ namespace CasaTequileraElBarrilito
 
         void CargaUsuarios()
         {
-            //this.usuarioTableAdapter.Fill(this.casaTequileraBarrilitoDataSet.Usuario);
-            //this.usuarioTableAdapter.Fill(negocio.ObtenerUsuarios());
-            dgvUsuarios.DataSource = negocio.ObtenerDatosUsuarios();
+            dgvUsuario.DataSource = negocio.ObtenerDatosUsuarios();
         }
        
 
-        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        private void btnCancelarConfig_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            dgvUsuarios.DataSource = negocio.ObtenerUsuarios();
-        }
-
-        private void btnCancelarConfig_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
         private void pbxFotoUsuarios_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialogFotoUsuario = new OpenFileDialog();
-            openFileDialogFotoUsuario.Filter = "Archivos de imagen (*.bmp;*.jpg;*.png)|*.bmp;*.jpg;*.png";
+            OpenFileDialog openFileDialogFotoUsuarios = new OpenFileDialog();
+            openFileDialogFotoUsuarios.Filter = "Archivos de imagen (*.bmp;*.jpg;*.png)|*.bmp;*.jpg;*.png";
 
-            if (openFileDialogFotoUsuario.ShowDialog() == DialogResult.OK)
+            if (openFileDialogFotoUsuarios.ShowDialog() == DialogResult.OK)
             {
-                pbxFotoUsuario.Image = Image.FromFile(openFileDialogFotoUsuario.FileName);
-                pbxFotoUsuario.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbxFotoUsuarios.Image = Image.FromFile(openFileDialogFotoUsuarios.FileName);
+                pbxFotoUsuarios.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
 
         private void btnGuardarUsuario_Click(object sender, EventArgs e)
         {
+        
+        }
+
+        void LimpiarCamposGrid()
+        {
+            txtUsuarioN.Text = string.Empty;
+            txtContrasenaN.Text = string.Empty;
+            txtNombreCom.Text = string.Empty;
+            pbxFotoUsuarios.Image = null;
+
+            CargaUsuarios();
+        }
+                
+        private void GuardarUsuarios_Click(object sender, EventArgs e)
+        {
             try
             {
-                string usuario = txtNuevoUsuario.Text;
-                string contrasena = txtNuevaContrasena.Text;
-                string nombreCompleto = txtNombreCompleto.Text;
-                Image foto = pbxFotoUsuario.Image;
+                string usuario = txtUsuarioN.Text;
+                string contrasena = txtContrasenaN.Text;
+                string nombreCompleto = txtNombreCom.Text;
+                Image foto = pbxFotoUsuarios.Image;
 
                 var result = negocio.GuardarUsuario(usuario, nombreCompleto, contrasena, foto);
 
@@ -113,26 +86,35 @@ namespace CasaTequileraElBarrilito
                     LimpiarCamposGrid();
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnCancelarUsuario_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void dgvUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
 
         }
 
-        void LimpiarCamposGrid()
+        private void dgvUsuario_SelectionChanged(object sender, EventArgs e)
         {
-            txtNuevoUsuario.Text = string.Empty;
-            txtNuevaContrasena.Text = string.Empty;
-            txtNombreCompleto.Text = string.Empty;
-            pbxFotoUsuario.Image = null;
+            //obtener el Id del usuario desde la fila seleccionada
+            // Obtener la primera fila seleccionada
+            if(dgvUsuario.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaSeleccionada = dgvUsuario.SelectedRows[0];
 
-            CargaUsuarios();
-        }
+                object idUsuario = Convert.ToInt32(filaSeleccionada.Cells["IdUsuario"].Value);
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-
+                //Vas a ir a base de datos para obtener informacion de ese usuario
+            }
         }
     }
 }

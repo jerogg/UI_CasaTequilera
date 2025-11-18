@@ -86,5 +86,20 @@ namespace Datos
 
             return resultado;
         }
+        public bool PasarUsuario(string nombre, string contrasena)
+        {
+            bool resultado = false;
+            try
+            {
+                resultado = casaTequileraBarrilitoEntities.Usuario.Select(x => x.Nombre_Corto == nombre && x.Contrasenia == contrasena).First();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return resultado;
+        }
     }
 }

@@ -63,5 +63,10 @@ namespace CasaTequileraElBarrilito
             Configuracion configuracion = new Configuracion();
             configuracion.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
