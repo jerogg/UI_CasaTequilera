@@ -11,7 +11,7 @@ namespace Datos
     public class ConexionABaseDeDatos
     {
         CasaTequileraBarrilitoEntities1 casaTequileraBarrilitoEntities = new CasaTequileraBarrilitoEntities1();
-        public List<Usuario> ObtenerUsuarios()
+        public List<Usuario> ObtenerTodosUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario> ();
             try
@@ -31,9 +31,6 @@ namespace Datos
             bool resultado = false;
             try
             {
-                //aqui la conversion de la contrasenia a byte[]
-                //byte[] contraseniaBytes = Encoding.UTF8.GetBytes(contrasena);
-
                 resultado = casaTequileraBarrilitoEntities.Usuario.Select(x => x.Nombre_Corto == nombre && x.Contrasenia == contrasena).First();
             }
             catch (Exception ex)
@@ -45,20 +42,71 @@ namespace Datos
             return resultado;
         }
 
-        public bool GuardarUsuario(string nombre, string contrasenia, string nombreCompleto, byte[] foto)
+        public bool GuardarUsuario(int IdUsuario, string nombre, string contrasenia, string nombreCompleto, byte[] foto)
         {
             bool resultado = false;
             try
             {
-                Usuario nuevoUsuario = new Usuario();
-                nuevoUsuario.Nombre = nombreCompleto;
-                nuevoUsuario.Contrasenia = contrasenia;
-                nuevoUsuario.Nombre_Corto = nombre;
-                nuevoUsuario.Foto = foto;
+                if (IdUsuario > 0) //editar usuario
+                {
+                    Usuario usuarioExistente = casaTequileraBarrilitoEntities.Usuario.Where(usario => usario.IdUsuario == IdUsuario).FirstOrDefault();
+                    usuarioExistente.Nombre = nombreCompleto;
+                    usuarioExistente.Contrasenia = contrasenia;
+                    usuarioExistente.Nombre_Corto = nombre;
+                    usuarioExistente.Foto = foto;
+                    casaTequileraBarrilitoEntities.SaveChanges();
+                    resultado = true;
 
-                casaTequileraBarrilitoEntities.Usuario.Add(nuevoUsuario);
+                }
+                else //nuevo usuario
+                {
+                    Usuario nuevoUsuario = new Usuario();
+                    nuevoUsuario.Nombre = nombreCompleto;
+                    nuevoUsuario.Contrasenia = contrasenia;
+                    nuevoUsuario.Nombre_Corto = nombre;
+                    nuevoUsuario.Foto = foto;
+
+                    casaTequileraBarrilitoEntities.Usuario.Add(nuevoUsuario);
+                    casaTequileraBarrilitoEntities.SaveChanges();
+                    resultado = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return resultado;
+        }
+       
+        public Usuario ObtenerDatosPorUsuario(int IdUsuario)
+        {
+            Usuario usuario = new Usuario();
+            try
+            {
+                usuario = casaTequileraBarrilitoEntities.Usuario.Where(usario => usario.IdUsuario == IdUsuario).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return usuario;
+        }
+
+        public bool EliminarUsuario(int IdUsuario)
+        {
+            Usuario usuario = new Usuario();
+            bool usuarioEliminado = false;
+            try
+            {
+                usuario = casaTequileraBarrilitoEntities.Usuario.Where(usario => usario.IdUsuario == IdUsuario).FirstOrDefault();
+                casaTequileraBarrilitoEntities.Usuario.Remove(usuario);
                 casaTequileraBarrilitoEntities.SaveChanges();
-                resultado = true;
+                usuarioEliminado = true;
             }
             catch (Exception ex)
             {
@@ -66,40 +114,8 @@ namespace Datos
                 throw ex;
             }
 
-            return resultado;
+            return usuarioEliminado;
         }
-        public bool EliminarUsuario(string id)
-        {
-            bool resultado = false;
-            try
-            {
-                //aqui la conversion de la contrasenia a byte[]
-                //byte[] contraseniaBytes = Encoding.UTF8.GetBytes(contrasena);
 
-                //resultado = casaTequileraBarrilitoEntities.Usuario.Select(x => x.Nombre_Corto == nombre && x.Contrasenia == contrasena).First();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-
-            return resultado;
-        }
-        public bool PasarUsuario(string nombre, string contrasena)
-        {
-            bool resultado = false;
-            try
-            {
-                resultado = casaTequileraBarrilitoEntities.Usuario.Select(x => x.Nombre_Corto == nombre && x.Contrasenia == contrasena).First();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-
-            return resultado;
-        }
     }
 }

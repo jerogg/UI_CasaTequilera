@@ -1,4 +1,5 @@
-﻿using Negocio;
+﻿using Data;
+using Negocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace CasaTequileraElBarrilito
 {
     public partial class Usuarios : Form
     {
+        public int idUsuario = 0;
         Negocio.Negocio negocio = new Negocio.Negocio();
         public Usuarios()
         {
@@ -49,11 +51,6 @@ namespace CasaTequileraElBarrilito
             }
         }
 
-        private void btnGuardarUsuario_Click(object sender, EventArgs e)
-        {
-        
-        }
-
         void LimpiarCamposGrid()
         {
             txtUsuarioN.Text = string.Empty;
@@ -73,7 +70,7 @@ namespace CasaTequileraElBarrilito
                 string nombreCompleto = txtNombreCom.Text;
                 Image foto = pbxFotoUsuarios.Image;
 
-                var result = negocio.GuardarUsuario(usuario, nombreCompleto, contrasena, foto);
+                var result = negocio.GuardarUsuario(idUsuario,usuario, nombreCompleto, contrasena, foto);
 
                 if (result == false)
                 {
@@ -106,14 +103,54 @@ namespace CasaTequileraElBarrilito
         private void dgvUsuario_SelectionChanged(object sender, EventArgs e)
         {
             //obtener el Id del usuario desde la fila seleccionada
-            // Obtener la primera fila seleccionada
             if(dgvUsuario.SelectedRows.Count > 0)
             {
                 DataGridViewRow filaSeleccionada = dgvUsuario.SelectedRows[0];
 
-                object idUsuario = Convert.ToInt32(filaSeleccionada.Cells["IdUsuario"].Value);
+                idUsuario = Convert.ToInt32(filaSeleccionada.Cells["IdUsuario"].Value);
 
-                //Vas a ir a base de datos para obtener informacion de ese usuario
+                Usuario usuario = new Usuario();
+                usuario = negocio.ObtenerDatosPorUsuario(idUsuario);
+
+                txtUsuarioN.Text = usuario.Nombre_Corto;
+                txtNombreCom.Text = usuario.Nombre;
+                txtContrasenaN.Text = usuario.Contrasenia;
+                pbxFotoUsuarios.Image = usuario.Foto is null ? null : negocio.ConvertirBytesAImagen(usuario.Foto);
+            }
+        }
+
+        private void btnEliminarUsuarios_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var result = negocio.EliminarUsuario(idUsuario);
+
+                if (result == false)
+                {
+                    MessageBox.Show("Usuario no eliminado");
+                }
+                else
+                {
+                    MessageBox.Show("Usuario eliminado");
+                    LimpiarCamposGrid();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnNuevoUsuario_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                idUsuario = 0;
+                LimpiarCamposGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

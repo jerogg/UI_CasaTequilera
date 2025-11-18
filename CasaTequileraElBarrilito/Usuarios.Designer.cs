@@ -112,6 +112,7 @@ namespace CasaTequileraElBarrilito
             this.btnEliminarUsuarios.TabIndex = 3;
             this.btnEliminarUsuarios.Text = "Eliminar Usuario";
             this.btnEliminarUsuarios.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuarios.Click += new System.EventHandler(this.btnEliminarUsuarios_Click);
             // 
             // btnNuevoUsuario
             // 
@@ -121,6 +122,7 @@ namespace CasaTequileraElBarrilito
             this.btnNuevoUsuario.TabIndex = 2;
             this.btnNuevoUsuario.Text = "Nuevo Usuario";
             this.btnNuevoUsuario.UseVisualStyleBackColor = true;
+            this.btnNuevoUsuario.Click += new System.EventHandler(this.btnNuevoUsuario_Click);
             // 
             // label2
             // 
