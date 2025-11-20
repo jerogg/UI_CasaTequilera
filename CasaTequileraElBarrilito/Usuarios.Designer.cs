@@ -57,6 +57,7 @@ namespace CasaTequileraElBarrilito
             this.panel7 = new System.Windows.Forms.Panel();
             this.GuardarUsuarios = new System.Windows.Forms.Button();
             this.btnCancelarUsuario = new System.Windows.Forms.Button();
+            this.btnImpresoraTicket = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
@@ -69,6 +70,7 @@ namespace CasaTequileraElBarrilito
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.btnImpresoraTicket);
             this.panel5.Controls.Add(this.btnCajonBascula);
             this.panel5.Controls.Add(this.btnGeneral);
             this.panel5.Location = new System.Drawing.Point(3, 0);
@@ -78,20 +80,26 @@ namespace CasaTequileraElBarrilito
             // 
             // btnCajonBascula
             // 
-            this.btnCajonBascula.Location = new System.Drawing.Point(126, 3);
+            this.btnCajonBascula.Image = ((System.Drawing.Image)(resources.GetObject("btnCajonBascula.Image")));
+            this.btnCajonBascula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCajonBascula.Location = new System.Drawing.Point(108, 3);
             this.btnCajonBascula.Name = "btnCajonBascula";
-            this.btnCajonBascula.Size = new System.Drawing.Size(124, 39);
-            this.btnCajonBascula.TabIndex = 1;
+            this.btnCajonBascula.Size = new System.Drawing.Size(153, 39);
+            this.btnCajonBascula.TabIndex = 2;
             this.btnCajonBascula.Text = "Cajon y Bascula";
+            this.btnCajonBascula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCajonBascula.UseVisualStyleBackColor = true;
             // 
             // btnGeneral
             // 
+            this.btnGeneral.Image = ((System.Drawing.Image)(resources.GetObject("btnGeneral.Image")));
+            this.btnGeneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGeneral.Location = new System.Drawing.Point(9, 3);
             this.btnGeneral.Name = "btnGeneral";
-            this.btnGeneral.Size = new System.Drawing.Size(111, 39);
-            this.btnGeneral.TabIndex = 0;
+            this.btnGeneral.Size = new System.Drawing.Size(97, 39);
+            this.btnGeneral.TabIndex = 1;
             this.btnGeneral.Text = "General";
+            this.btnGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGeneral.UseVisualStyleBackColor = true;
             // 
             // panel6
@@ -109,7 +117,7 @@ namespace CasaTequileraElBarrilito
             this.btnEliminarUsuarios.Location = new System.Drawing.Point(507, 27);
             this.btnEliminarUsuarios.Name = "btnEliminarUsuarios";
             this.btnEliminarUsuarios.Size = new System.Drawing.Size(122, 39);
-            this.btnEliminarUsuarios.TabIndex = 3;
+            this.btnEliminarUsuarios.TabIndex = 5;
             this.btnEliminarUsuarios.Text = "Eliminar Usuario";
             this.btnEliminarUsuarios.UseVisualStyleBackColor = true;
             this.btnEliminarUsuarios.Click += new System.EventHandler(this.btnEliminarUsuarios_Click);
@@ -119,7 +127,7 @@ namespace CasaTequileraElBarrilito
             this.btnNuevoUsuario.Location = new System.Drawing.Point(390, 27);
             this.btnNuevoUsuario.Name = "btnNuevoUsuario";
             this.btnNuevoUsuario.Size = new System.Drawing.Size(111, 39);
-            this.btnNuevoUsuario.TabIndex = 2;
+            this.btnNuevoUsuario.TabIndex = 4;
             this.btnNuevoUsuario.Text = "Nuevo Usuario";
             this.btnNuevoUsuario.UseVisualStyleBackColor = true;
             this.btnNuevoUsuario.Click += new System.EventHandler(this.btnNuevoUsuario_Click);
@@ -149,7 +157,7 @@ namespace CasaTequileraElBarrilito
             this.dgvUsuario.RowTemplate.Height = 24;
             this.dgvUsuario.ShowCellToolTips = false;
             this.dgvUsuario.Size = new System.Drawing.Size(310, 350);
-            this.dgvUsuario.TabIndex = 2;
+            this.dgvUsuario.TabIndex = 9;
             this.dgvUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuario_CellContentClick);
             this.dgvUsuario.SelectionChanged += new System.EventHandler(this.dgvUsuario_SelectionChanged);
             // 
@@ -230,21 +238,21 @@ namespace CasaTequileraElBarrilito
             this.txtNombreCom.Location = new System.Drawing.Point(124, 75);
             this.txtNombreCom.Name = "txtNombreCom";
             this.txtNombreCom.Size = new System.Drawing.Size(166, 22);
-            this.txtNombreCom.TabIndex = 6;
+            this.txtNombreCom.TabIndex = 8;
             // 
             // txtContrasenaN
             // 
             this.txtContrasenaN.Location = new System.Drawing.Point(124, 42);
             this.txtContrasenaN.Name = "txtContrasenaN";
             this.txtContrasenaN.Size = new System.Drawing.Size(166, 22);
-            this.txtContrasenaN.TabIndex = 5;
+            this.txtContrasenaN.TabIndex = 7;
             // 
             // txtUsuarioN
             // 
             this.txtUsuarioN.Location = new System.Drawing.Point(124, 14);
             this.txtUsuarioN.Name = "txtUsuarioN";
             this.txtUsuarioN.Size = new System.Drawing.Size(166, 22);
-            this.txtUsuarioN.TabIndex = 4;
+            this.txtUsuarioN.TabIndex = 6;
             // 
             // label8
             // 
@@ -301,6 +309,15 @@ namespace CasaTequileraElBarrilito
             this.btnCancelarUsuario.UseVisualStyleBackColor = true;
             this.btnCancelarUsuario.Click += new System.EventHandler(this.btnCancelarUsuario_Click);
             // 
+            // btnImpresoraTicket
+            // 
+            this.btnImpresoraTicket.Location = new System.Drawing.Point(267, 3);
+            this.btnImpresoraTicket.Name = "btnImpresoraTicket";
+            this.btnImpresoraTicket.Size = new System.Drawing.Size(144, 39);
+            this.btnImpresoraTicket.TabIndex = 3;
+            this.btnImpresoraTicket.Text = "Impresora y Ticket";
+            this.btnImpresoraTicket.UseVisualStyleBackColor = true;
+            // 
             // Usuarios
             // 
             this.ClientSize = new System.Drawing.Size(763, 487);
@@ -356,5 +373,6 @@ namespace CasaTequileraElBarrilito
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
         private System.Windows.Forms.DataGridViewImageColumn Foto;
+        private System.Windows.Forms.Button btnImpresoraTicket;
     }
 }

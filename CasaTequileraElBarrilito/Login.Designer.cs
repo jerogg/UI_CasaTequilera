@@ -76,7 +76,7 @@
             this.cbxUsuario.Location = new System.Drawing.Point(268, 201);
             this.cbxUsuario.Name = "cbxUsuario";
             this.cbxUsuario.Size = new System.Drawing.Size(344, 27);
-            this.cbxUsuario.TabIndex = 2;
+            this.cbxUsuario.TabIndex = 1;
             this.cbxUsuario.SelectedIndexChanged += new System.EventHandler(this.cbox_SelectedIndexChanged);
             // 
             // txtContrasena
@@ -86,7 +86,7 @@
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(344, 27);
-            this.txtContrasena.TabIndex = 3;
+            this.txtContrasena.TabIndex = 2;
             // 
             // lblBienvenido
             // 
@@ -104,7 +104,7 @@
             this.btnCerrar.Location = new System.Drawing.Point(268, 361);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(108, 38);
-            this.btnCerrar.TabIndex = 5;
+            this.btnCerrar.TabIndex = 4;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -115,7 +115,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(407, 361);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(108, 38);
-            this.btnAceptar.TabIndex = 6;
+            this.btnAceptar.TabIndex = 3;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);

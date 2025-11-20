@@ -149,51 +149,64 @@
             // 
             // btnCorte
             // 
-            this.btnCorte.Location = new System.Drawing.Point(539, -1);
+            this.btnCorte.Location = new System.Drawing.Point(503, 0);
             this.btnCorte.Name = "btnCorte";
             this.btnCorte.Size = new System.Drawing.Size(128, 58);
-            this.btnCorte.TabIndex = 5;
+            this.btnCorte.TabIndex = 4;
             this.btnCorte.Text = "Corte";
             this.btnCorte.UseVisualStyleBackColor = true;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(802, 0);
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(820, 0);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(118, 60);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Size = new System.Drawing.Size(92, 60);
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.Text = "Salir  ";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnConfig
             // 
-            this.btnConfig.Location = new System.Drawing.Point(405, -1);
+            this.btnConfig.Image = ((System.Drawing.Image)(resources.GetObject("btnConfig.Image")));
+            this.btnConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfig.Location = new System.Drawing.Point(372, 1);
             this.btnConfig.Name = "btnConfig";
-            this.btnConfig.Size = new System.Drawing.Size(128, 58);
+            this.btnConfig.Size = new System.Drawing.Size(125, 58);
             this.btnConfig.TabIndex = 3;
             this.btnConfig.Text = "Configuración";
+            this.btnConfig.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConfig.UseVisualStyleBackColor = true;
             this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
             // 
             // btnInventario
             // 
-            this.btnInventario.Location = new System.Drawing.Point(271, -1);
+            this.btnInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnInventario.Image")));
+            this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInventario.Location = new System.Drawing.Point(256, 0);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(128, 58);
+            this.btnInventario.Size = new System.Drawing.Size(110, 58);
             this.btnInventario.TabIndex = 2;
-            this.btnInventario.Text = "Inventario";
+            this.btnInventario.Text = "Inventario ";
+            this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnInventario.UseVisualStyleBackColor = true;
             this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // btnProductos
             // 
+            this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
+            this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductos.Location = new System.Drawing.Point(137, -1);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(128, 58);
+            this.btnProductos.Size = new System.Drawing.Size(113, 58);
             this.btnProductos.TabIndex = 1;
             this.btnProductos.Text = "Productos";
+            this.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // btnVentas
             // 
@@ -239,7 +252,7 @@
             this.button1.Location = new System.Drawing.Point(539, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 58);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Borrar Art.";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -248,7 +261,7 @@
             this.btnSalidas.Location = new System.Drawing.Point(405, -1);
             this.btnSalidas.Name = "btnSalidas";
             this.btnSalidas.Size = new System.Drawing.Size(128, 58);
-            this.btnSalidas.TabIndex = 3;
+            this.btnSalidas.TabIndex = 8;
             this.btnSalidas.Text = "Salidas";
             this.btnSalidas.UseVisualStyleBackColor = true;
             // 
@@ -257,7 +270,7 @@
             this.btnEntradas.Location = new System.Drawing.Point(271, -1);
             this.btnEntradas.Name = "btnEntradas";
             this.btnEntradas.Size = new System.Drawing.Size(128, 58);
-            this.btnEntradas.TabIndex = 2;
+            this.btnEntradas.TabIndex = 7;
             this.btnEntradas.Text = "Entradas";
             this.btnEntradas.UseVisualStyleBackColor = true;
             // 
@@ -266,7 +279,7 @@
             this.btnMayoreo.Location = new System.Drawing.Point(137, 0);
             this.btnMayoreo.Name = "btnMayoreo";
             this.btnMayoreo.Size = new System.Drawing.Size(128, 58);
-            this.btnMayoreo.TabIndex = 1;
+            this.btnMayoreo.TabIndex = 6;
             this.btnMayoreo.Text = "Mayoreo";
             this.btnMayoreo.UseVisualStyleBackColor = true;
             // 
@@ -275,7 +288,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(3, 0);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(128, 58);
-            this.btnBuscar.TabIndex = 0;
+            this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 

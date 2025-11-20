@@ -68,5 +68,11 @@ namespace CasaTequileraElBarrilito
         {
             Application.Exit();
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            Productos productos = new Productos();
+            productos.Show();
+        }
     }
 }
