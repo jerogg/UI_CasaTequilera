@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CasaTequileraElBarrilito.Productos
 {
-    public partial class SessionesBodega : UserControl
+    public partial class SeccionesBodega : UserControl
     {
-        public SessionesBodega()
+        public SeccionesBodega()
         {
             InitializeComponent();
         }

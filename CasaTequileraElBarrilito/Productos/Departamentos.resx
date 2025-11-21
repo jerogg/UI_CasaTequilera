@@ -117,31 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnGuardarProducto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7AAAAOwAFq1okJAAAAB3RJ
-        TUUH6QsUEjEcmMo90AAAAkRJREFUWEftmOlLG0EYh/3fWhEponjVA0URrYXWTwoa1NaIJRGqYsSkqDWt
-        d7yJitEYMTRI0RSDR6xHaRWq0SZiqAjW9C3vaEazuTZ7SD/MA78PO7z7zrPDJLNsXByD8Z9z7vkFHtcR
-        uF1HcLi7DT++bvEK1rqPf4L3zA3cnpJgM45CXV4yVKU+Ep2arESwTY1JJzo/0B00iRRZGh+URrLmaSJp
-        WJ2ZAOO6ZjAPfoA3RZlkDFcDryPldW4Sqa0vSIVhjRoU6fFU0jLSJ07y7NRFm012tIKftornZEyZn0LH
-        wqEqziK1TWWF5HrNuhAgaR76KFwSfxD+RosjfXRSMYLIl6V5UKQ9pr1NvV3CJOUSRLiSsz0dsUtGE6zN
-        fgKrltmIwYcIJYjYF+cCJGf0utgkownGklCCiN1iEr6S4QQn3rUECUTLsKYxQOw+K+aZgNpvmw5+kuEE
-        fT4fHOw4YX99jVewFu+JxCfjKJ1rulsrTlAO8AEUaTd/P7jaXJeQPKQgUp2RcCuoZoKCYIJikUxwY9kK
-        zWWFoH6WIyq9ja/gz9WV9ILaqpd0XGx2HXbpBf1HHR5R3FXhE//5jHGuLssnyOdtJhS2qbtTgwkKgQky
-        Qd6CJ8e00YKhhzaSQ/CvkNetC+85baQpLwWvx02aSS3ou76Gz3NGOmbsbOMniLRXvqA3PlT2HHb+gvjR
-        R1WSHdREruBW4jpE5fLiN1gnDDCmbSIb2NCqAn2DAt4rK0Wl/2096Yd7blqvg+/OjdjlGAzGHf8AHBfT
-        020VBJgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <metadata name="Nombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="departamentosBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 140</value>
   </metadata>
-  <metadata name="IdUsuario.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="departamentosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>281, 17</value>
   </metadata>
-  <metadata name="Foto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="casaTequileraBarrilitoDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="departamentosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>538, 17</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 58</value>
+  </metadata>
+  <metadata name="departamentosBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>281, 58</value>
+  </metadata>
+  <metadata name="departamentosTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>546, 58</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 99</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>273, 99</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>625, 99</value>
+  </metadata>
+  <metadata name="departamentosBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 140</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>625, 99</value>
+  </metadata>
+  <metadata name="departamentosTableAdapter2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>282, 140</value>
   </metadata>
 </root>

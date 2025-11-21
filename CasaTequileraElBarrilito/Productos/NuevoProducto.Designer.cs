@@ -1,6 +1,6 @@
 ﻿namespace CasaTequileraElBarrilito.Productos
 {
-    partial class Productos
+    partial class NuevoProducto
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Productos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoProducto));
             this.btnGuardarProducto = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,25 +40,25 @@
             this.txtDescripcionProd = new System.Windows.Forms.TextBox();
             this.txtPrecioCosto = new System.Windows.Forms.TextBox();
             this.dgvUsuario = new System.Windows.Forms.DataGridView();
-            this.Foto = new System.Windows.Forms.DataGridViewImageColumn();
-            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Foto = new System.Windows.Forms.DataGridViewImageColumn();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigoBarras = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.pnlNuevoProducto = new System.Windows.Forms.Panel();
             this.cbxSeccionBodega = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlNuevoProducto.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGuardarProducto
             // 
             this.btnGuardarProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardarProducto.Image")));
             this.btnGuardarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarProducto.Location = new System.Drawing.Point(3, 543);
+            this.btnGuardarProducto.Location = new System.Drawing.Point(12, 517);
             this.btnGuardarProducto.Name = "btnGuardarProducto";
             this.btnGuardarProducto.Size = new System.Drawing.Size(160, 57);
             this.btnGuardarProducto.TabIndex = 8;
@@ -164,13 +164,13 @@
             this.dgvUsuario.Size = new System.Drawing.Size(332, 122);
             this.dgvUsuario.TabIndex = 12;
             // 
-            // Foto
+            // Nombre
             // 
-            this.Foto.DataPropertyName = "Foto";
-            this.Foto.HeaderText = "Foto";
-            this.Foto.MinimumWidth = 6;
-            this.Foto.Name = "Foto";
-            this.Foto.Width = 125;
+            this.Nombre.DataPropertyName = "Nombre_Corto";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 125;
             // 
             // IdUsuario
             // 
@@ -181,13 +181,13 @@
             this.IdUsuario.Visible = false;
             this.IdUsuario.Width = 125;
             // 
-            // Nombre
+            // Foto
             // 
-            this.Nombre.DataPropertyName = "Nombre_Corto";
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MinimumWidth = 6;
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 125;
+            this.Foto.DataPropertyName = "Foto";
+            this.Foto.HeaderText = "Foto";
+            this.Foto.MinimumWidth = 6;
+            this.Foto.Name = "Foto";
+            this.Foto.Width = 125;
             // 
             // comboBox1
             // 
@@ -222,28 +222,37 @@
             this.txtCodigoBarras.Size = new System.Drawing.Size(200, 22);
             this.txtCodigoBarras.TabIndex = 9;
             // 
-            // panel1
+            // pnlNuevoProducto
             // 
-            this.panel1.Controls.Add(this.cbxSeccionBodega);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.cbxProductoInventario);
-            this.panel1.Controls.Add(this.dgvUsuario);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txtPrecioCosto);
-            this.panel1.Controls.Add(this.txtCodigoBarras);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtDescripcionProd);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(3, 15);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(431, 522);
-            this.panel1.TabIndex = 9;
+            this.pnlNuevoProducto.Controls.Add(this.cbxSeccionBodega);
+            this.pnlNuevoProducto.Controls.Add(this.btnGuardarProducto);
+            this.pnlNuevoProducto.Controls.Add(this.label9);
+            this.pnlNuevoProducto.Controls.Add(this.label8);
+            this.pnlNuevoProducto.Controls.Add(this.comboBox1);
+            this.pnlNuevoProducto.Controls.Add(this.label7);
+            this.pnlNuevoProducto.Controls.Add(this.label1);
+            this.pnlNuevoProducto.Controls.Add(this.cbxProductoInventario);
+            this.pnlNuevoProducto.Controls.Add(this.dgvUsuario);
+            this.pnlNuevoProducto.Controls.Add(this.label6);
+            this.pnlNuevoProducto.Controls.Add(this.txtPrecioCosto);
+            this.pnlNuevoProducto.Controls.Add(this.txtCodigoBarras);
+            this.pnlNuevoProducto.Controls.Add(this.label5);
+            this.pnlNuevoProducto.Controls.Add(this.txtDescripcionProd);
+            this.pnlNuevoProducto.Controls.Add(this.label2);
+            this.pnlNuevoProducto.Controls.Add(this.label3);
+            this.pnlNuevoProducto.Controls.Add(this.label4);
+            this.pnlNuevoProducto.Location = new System.Drawing.Point(3, 15);
+            this.pnlNuevoProducto.Name = "pnlNuevoProducto";
+            this.pnlNuevoProducto.Size = new System.Drawing.Size(431, 587);
+            this.pnlNuevoProducto.TabIndex = 9;
+            // 
+            // cbxSeccionBodega
+            // 
+            this.cbxSeccionBodega.FormattingEnabled = true;
+            this.cbxSeccionBodega.Location = new System.Drawing.Point(160, 319);
+            this.cbxSeccionBodega.Name = "cbxSeccionBodega";
+            this.cbxSeccionBodega.Size = new System.Drawing.Size(191, 24);
+            this.cbxSeccionBodega.TabIndex = 15;
             // 
             // label9
             // 
@@ -254,25 +263,16 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Seccion de Bodega";
             // 
-            // cbxSeccionBodega
-            // 
-            this.cbxSeccionBodega.FormattingEnabled = true;
-            this.cbxSeccionBodega.Location = new System.Drawing.Point(160, 319);
-            this.cbxSeccionBodega.Name = "cbxSeccionBodega";
-            this.cbxSeccionBodega.Size = new System.Drawing.Size(191, 24);
-            this.cbxSeccionBodega.TabIndex = 15;
-            // 
-            // Productos
+            // NuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnGuardarProducto);
-            this.Name = "Productos";
-            this.Size = new System.Drawing.Size(1304, 605);
+            this.Controls.Add(this.pnlNuevoProducto);
+            this.Name = "NuevoProducto";
+            this.Size = new System.Drawing.Size(663, 605);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlNuevoProducto.ResumeLayout(false);
+            this.pnlNuevoProducto.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -296,7 +296,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigoBarras;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlNuevoProducto;
         private System.Windows.Forms.ComboBox cbxSeccionBodega;
         private System.Windows.Forms.Label label9;
     }

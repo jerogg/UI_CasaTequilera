@@ -60,17 +60,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Productos\Departmentos.cs">
+    <Compile Include="CasaTequileraBarrilitoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaTequileraBarrilitoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CasaTequileraBarrilitoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaTequileraBarrilitoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CasaTequileraBarrilitoDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasaTequileraBarrilitoDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\Departamentos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Productos\Departmentos.Designer.cs">
-      <DependentUpon>Departmentos.cs</DependentUpon>
+    <Compile Include="Productos\Departamentos.Designer.cs">
+      <DependentUpon>Departamentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Productos.cs">
+    <Compile Include="Productos\NuevoProducto.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Productos\Productos.Designer.cs">
-      <DependentUpon>Productos.cs</DependentUpon>
+    <Compile Include="Productos\NuevoProducto.Designer.cs">
+      <DependentUpon>NuevoProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Productos\ProductosControl.cs">
       <SubType>UserControl</SubType>
@@ -78,11 +93,11 @@
     <Compile Include="Productos\ProductosControl.Designer.cs">
       <DependentUpon>ProductosControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos\SessionesBodega.cs">
+    <Compile Include="Productos\SeccionesBodega.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Productos\SessionesBodega.Designer.cs">
-      <DependentUpon>SessionesBodega.cs</DependentUpon>
+    <Compile Include="Productos\SeccionesBodega.Designer.cs">
+      <DependentUpon>SeccionesBodega.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
@@ -101,11 +116,11 @@
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas.cs">
+    <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas.Designer.cs">
-      <DependentUpon>Ventas.cs</DependentUpon>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -115,11 +130,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Productos\Departmentos.resx">
-      <DependentUpon>Departmentos.cs</DependentUpon>
+    <Compile Include="VentasControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VentasControl.Designer.cs">
+      <DependentUpon>VentasControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Productos\Departamentos.resx">
+      <DependentUpon>Departamentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos\Productos.resx">
-      <DependentUpon>Productos.cs</DependentUpon>
+    <EmbeddedResource Include="Productos\NuevoProducto.resx">
+      <DependentUpon>NuevoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Productos\ProductosControl.resx">
       <DependentUpon>ProductosControl.cs</DependentUpon>
@@ -130,8 +151,8 @@
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas.resx">
-      <DependentUpon>Ventas.cs</DependentUpon>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -145,6 +166,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VentasControl.resx">
+      <DependentUpon>VentasControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="CasaTequileraBarrilitoDataSet.xsc">
       <DependentUpon>CasaTequileraBarrilitoDataSet.xsd</DependentUpon>
     </None>
@@ -155,6 +179,39 @@
     </None>
     <None Include="CasaTequileraBarrilitoDataSet.xss">
       <DependentUpon>CasaTequileraBarrilitoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet1.xsc">
+      <DependentUpon>CasaTequileraBarrilitoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaTequileraBarrilitoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet1.xss">
+      <DependentUpon>CasaTequileraBarrilitoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet2.xsc">
+      <DependentUpon>CasaTequileraBarrilitoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaTequileraBarrilitoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet2.xss">
+      <DependentUpon>CasaTequileraBarrilitoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet3.xsc">
+      <DependentUpon>CasaTequileraBarrilitoDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasaTequileraBarrilitoDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasaTequileraBarrilitoDataSet3.xss">
+      <DependentUpon>CasaTequileraBarrilitoDataSet3.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -183,7 +240,9 @@
   <ItemGroup>
     <Content Include="Archivos\Logo1.jpeg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="CasaTequileraElBarrilito\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

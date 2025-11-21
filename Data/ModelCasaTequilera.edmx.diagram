@@ -10,6 +10,13 @@
         <AssociationConnector Association="CasaTequileraBarrilitoModel.IdSeccion" ManuallyRouted="false" />
         <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Usuario" Width="1.5" PointX="0.75" PointY="3.875" />
         <AssociationConnector Association="CasaTequileraBarrilitoModel.IdUsuario" />
+        <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Departamentos" Width="1.5" PointX="3.375" PointY="4.375" />
+        <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Inventario" Width="1.5" PointX="7.875" PointY="4" />
+        <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.Productos" Width="1.5" PointX="5.625" PointY="4" />
+        <EntityTypeShape EntityType="CasaTequileraBarrilitoModel.SeccionBodega" Width="1.5" PointX="5.625" PointY="1.375" />
+        <AssociationConnector Association="CasaTequileraBarrilitoModel.IdDepartamento" />
+        <AssociationConnector Association="CasaTequileraBarrilitoModel.IdProducto" />
+        <AssociationConnector Association="CasaTequileraBarrilitoModel.IdSeccionBodega" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

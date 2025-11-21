@@ -121,7 +121,7 @@
   <data name="btnCajonBascula.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJ
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7CAAAOwgEVKEqAAAAAB3RJ
         TUUH6QsUEQkPCa1+rAAABMRJREFUWEftmOlTk1cUh/2b+qHtTLWi1dbSjp3WalWqbAUFKxUoAoqlllZb
         LAoIBkJYNKyyVHYiSkFEyiLIWiggsocQEiArIemvc66TNLmGLQSZdng+Zbhv3vfJec8591x27Nhmm/8J
         c9IxlEUHITfMDZP9HeDXt4xFrRr14htI9nJB67109D2qQOrpA5DcvAjV7PTWinY/KEKKzz5UJ0ZCrZiB
@@ -148,7 +148,7 @@
   <data name="btnGeneral.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7BAAAOwQG4kWvtAAAAB3RJ
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7AAAAOwAFq1okJAAAAB3RJ
         TUUH6QsMFBIct0NJcwAAApRJREFUSEu1lf9PUlEYxvl7kraarSapldPVLG1Z9kUnImHl0C1bbZgI+SXd
         bLOtGmaUtshVGAEzdZbiFIuSTIeoTR2rRWZDJgRiv73t3IK4970HEe3Znh84e573c+/h3HsFgg1opMcI
         bfVXGXc010Lwpx+4mS1RtTgPilK2ReywWf8PqPxwGgtkMekTBw0an4E8Ow369brIkDFLP1yTnWZBiGUH
@@ -175,6 +175,18 @@
   <metadata name="casaTequileraBarrilitoDataSet1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 58</value>
   </metadata>
+  <metadata name="Nombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="IdUsuario.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Foto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="casaTequileraBarrilitoDataSet1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 58</value>
+  </metadata>
   <metadata name="casaTequileraBarrilitoDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -184,7 +196,7 @@
   <data name="pbxFotoUsuarios.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAABixJREFUWEe9l2tPE1kcxv0GmvjOoAlqYnxhSEioGiWOCisSFrpo6BIhkGA2IGRD
+        wAAADsABataJCQAABixJREFUWEe9l2tPE1kcxv0GmvjOoAlqYnxhSEioGiWOCisSFrpo6BIhkGA2IGRD
         DARkZN3SRQQBHZaFQpUV13AtBbbAIttambZQqKVcSu+F0kJpO73MfIPNdLA7PW2huGZ/mVfPc848c2bO
         5T9HiMOwa1AZ379e/r1qoeWejH1bWntzriFb1VGyzm/aWpzyYU6wQ3SOgEIk/B63WfxO0ZyLwtA+l/TJ
         N2v9dU7zKtg/EgcH25TT8w13qFvL2GkrvTWW2UG7+oPTqHZvru9o5rYWJnXjyEJL3t4TPL6+zm88cPT7
@@ -211,6 +223,23 @@
         U3Nycl68eNHe3p6UlMRisSYnJ0+fPl1QUMBkMhEEqa2tBYLLysquXbuWkpLidrvj4+PLy8t7e3sZDEZi
         YqJGQ643cFaXl5c3BygtDakFXC4XjuNXrlyZmJjIy8sbGBjAMMzvj/D/GcTt3vuX93q9Ho+HPK8wDMdx
         SgSDLRZLW1tbT0+P0xlh61EoFK2trQKBINj/iwGD/zf+AXdfqOhWwD79AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="GuardarUsuarios.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJ
+        TUUH6QsUEjEcmMo90AAAAkRJREFUWEftmOlLG0EYh/3fWhEponjVA0URrYXWTwoa1NaIJRGqYsSkqDWt
+        d7yJitEYMTRI0RSDR6xHaRWq0SZiqAjW9C3vaEazuTZ7SD/MA78PO7z7zrPDJLNsXByD8Z9z7vkFHtcR
+        uF1HcLi7DT++bvEK1rqPf4L3zA3cnpJgM45CXV4yVKU+Ep2arESwTY1JJzo/0B00iRRZGh+URrLmaSJp
+        WJ2ZAOO6ZjAPfoA3RZlkDFcDryPldW4Sqa0vSIVhjRoU6fFU0jLSJ07y7NRFm012tIKftornZEyZn0LH
+        wqEqziK1TWWF5HrNuhAgaR76KFwSfxD+RosjfXRSMYLIl6V5UKQ9pr1NvV3CJOUSRLiSsz0dsUtGE6zN
+        fgKrltmIwYcIJYjYF+cCJGf0utgkownGklCCiN1iEr6S4QQn3rUECUTLsKYxQOw+K+aZgNpvmw5+kuEE
+        fT4fHOw4YX99jVewFu+JxCfjKJ1rulsrTlAO8AEUaTd/P7jaXJeQPKQgUp2RcCuoZoKCYIJikUxwY9kK
+        zWWFoH6WIyq9ja/gz9WV9ILaqpd0XGx2HXbpBf1HHR5R3FXhE//5jHGuLssnyOdtJhS2qbtTgwkKgQky
+        Qd6CJ8e00YKhhzaSQ/CvkNetC+85baQpLwWvx02aSS3ou76Gz3NGOmbsbOMniLRXvqA3PlT2HHb+gvjR
+        R1WSHdREruBW4jpE5fLiN1gnDDCmbSIb2NCqAn2DAt4rK0Wl/2096Yd7blqvg+/OjdjlGAzGHf8AHBfT
+        020VBJgAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

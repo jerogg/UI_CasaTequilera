@@ -129,5 +129,33 @@ namespace Negocio
         }
 
         
+        public List<Departamentos> ObtenerDepartamentos()
+        {
+            List<Departamentos> departamento = new List<Departamentos>();
+            try
+            {
+                departamento = datos.ObtenerDatosDepartamentos();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return departamento;
+        }
+
+        public bool EliminarDepartamento(int IdDepartamento)
+        {
+            bool departamentoEliminado = false;
+            try
+            {
+                departamentoEliminado = datos.EliminarDepartamento(IdDepartamento);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return departamentoEliminado;
+        }
     }
 }

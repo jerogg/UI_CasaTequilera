@@ -42,6 +42,22 @@
       <End Role="Usuario" EntitySet="Usuario" />
       <End Role="Rol" EntitySet="Rol" />
     </AssociationSet>
+    <EntitySet Name="Departamentos" EntityType="CasaTequileraBarrilitoModel.Departamentos" />
+    <EntitySet Name="Inventario" EntityType="CasaTequileraBarrilitoModel.Inventario" />
+    <EntitySet Name="Productos" EntityType="CasaTequileraBarrilitoModel.Productos" />
+    <EntitySet Name="SeccionBodega" EntityType="CasaTequileraBarrilitoModel.SeccionBodega" />
+    <AssociationSet Name="IdDepartamento" Association="CasaTequileraBarrilitoModel.IdDepartamento">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="IdProducto" Association="CasaTequileraBarrilitoModel.IdProducto">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="Inventario" EntitySet="Inventario" />
+    </AssociationSet>
+    <AssociationSet Name="IdSeccionBodega" Association="CasaTequileraBarrilitoModel.IdSeccionBodega">
+      <End Role="SeccionBodega" EntitySet="SeccionBodega" />
+      <End Role="Inventario" EntitySet="Inventario" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Usuario">
     <Key>
@@ -63,6 +79,82 @@
       </Principal>
       <Dependent Role="Rol">
         <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Departamentos">
+    <Key>
+      <PropertyRef Name="IdDepartamento" />
+    </Key>
+    <Property Name="IdDepartamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreDepartamento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Productos" Relationship="CasaTequileraBarrilitoModel.IdDepartamento" FromRole="Departamentos" ToRole="Productos" />
+  </EntityType>
+  <EntityType Name="Inventario">
+    <Key>
+      <PropertyRef Name="IdInventario" />
+    </Key>
+    <Property Name="IdInventario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Existencias" Type="Int32" Nullable="false" />
+    <Property Name="Minimo" Type="Int32" Nullable="false" />
+    <Property Name="IdProducto" Type="Int32" Nullable="false" />
+    <Property Name="IdSeccionBodega" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Productos" Relationship="CasaTequileraBarrilitoModel.IdProducto" FromRole="Inventario" ToRole="Productos" />
+    <NavigationProperty Name="SeccionBodega" Relationship="CasaTequileraBarrilitoModel.IdSeccionBodega" FromRole="Inventario" ToRole="SeccionBodega" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+    </Key>
+    <Property Name="IdProducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoBarras" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Costo" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IdDepartamento" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Departamentos" Relationship="CasaTequileraBarrilitoModel.IdDepartamento" FromRole="Productos" ToRole="Departamentos" />
+    <NavigationProperty Name="Inventario" Relationship="CasaTequileraBarrilitoModel.IdProducto" FromRole="Productos" ToRole="Inventario" />
+  </EntityType>
+  <EntityType Name="SeccionBodega">
+    <Key>
+      <PropertyRef Name="IdSeccionBodega" />
+    </Key>
+    <Property Name="IdSeccionBodega" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Inventario" Relationship="CasaTequileraBarrilitoModel.IdSeccionBodega" FromRole="SeccionBodega" ToRole="Inventario" />
+  </EntityType>
+  <Association Name="IdDepartamento">
+    <End Type="CasaTequileraBarrilitoModel.Departamentos" Role="Departamentos" Multiplicity="1" />
+    <End Type="CasaTequileraBarrilitoModel.Productos" Role="Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="IdDepartamento" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="IdDepartamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="IdProducto">
+    <End Type="CasaTequileraBarrilitoModel.Productos" Role="Productos" Multiplicity="1" />
+    <End Type="CasaTequileraBarrilitoModel.Inventario" Role="Inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="Inventario">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="IdSeccionBodega">
+    <End Type="CasaTequileraBarrilitoModel.SeccionBodega" Role="SeccionBodega" Multiplicity="1" />
+    <End Type="CasaTequileraBarrilitoModel.Inventario" Role="Inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SeccionBodega">
+        <PropertyRef Name="IdSeccionBodega" />
+      </Principal>
+      <Dependent Role="Inventario">
+        <PropertyRef Name="IdSeccionBodega" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

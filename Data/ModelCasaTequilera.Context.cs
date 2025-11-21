@@ -28,5 +28,9 @@ namespace Data
         public virtual DbSet<Rol> Rol { get; set; }
         public virtual DbSet<Seccion> Seccion { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Departamentos> Departamentos { get; set; }
+        public virtual DbSet<Inventario> Inventario { get; set; }
+        public virtual DbSet<Productos> Productos { get; set; }
+        public virtual DbSet<SeccionBodega> SeccionBodega { get; set; }
     }
 }

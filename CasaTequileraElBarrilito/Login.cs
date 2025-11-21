@@ -58,7 +58,7 @@ namespace CasaTequileraElBarrilito
 
             if (acceso)
             {
-                Ventas ventas = new Ventas();
+                Principal ventas = new Principal();
                 ventas.Show();
                 this.Hide();
             }

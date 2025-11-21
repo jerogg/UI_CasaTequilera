@@ -1,6 +1,6 @@
 ﻿namespace CasaTequileraElBarrilito.Productos
 {
-    partial class SessionesBodega
+    partial class SeccionesBodega
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

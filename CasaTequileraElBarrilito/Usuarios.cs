@@ -97,7 +97,6 @@ namespace CasaTequileraElBarrilito
         private void dgvUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
-
         }
 
         private void dgvUsuario_SelectionChanged(object sender, EventArgs e)

@@ -45,7 +45,7 @@
             this.btnNuevoProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevoProducto.Location = new System.Drawing.Point(3, 4);
             this.btnNuevoProducto.Name = "btnNuevoProducto";
-            this.btnNuevoProducto.Size = new System.Drawing.Size(100, 48);
+            this.btnNuevoProducto.Size = new System.Drawing.Size(115, 48);
             this.btnNuevoProducto.TabIndex = 1;
             this.btnNuevoProducto.Text = "Nuevo ";
             this.btnNuevoProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -65,10 +65,11 @@
             // 
             // btnSeccionBodega
             // 
+            this.btnSeccionBodega.Image = ((System.Drawing.Image)(resources.GetObject("btnSeccionBodega.Image")));
             this.btnSeccionBodega.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeccionBodega.Location = new System.Drawing.Point(469, 4);
+            this.btnSeccionBodega.Location = new System.Drawing.Point(516, 3);
             this.btnSeccionBodega.Name = "btnSeccionBodega";
-            this.btnSeccionBodega.Size = new System.Drawing.Size(128, 48);
+            this.btnSeccionBodega.Size = new System.Drawing.Size(118, 48);
             this.btnSeccionBodega.TabIndex = 5;
             this.btnSeccionBodega.Text = "Secciones Bodega";
             this.btnSeccionBodega.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -76,33 +77,37 @@
             // 
             // btnDepartamentos
             // 
+            this.btnDepartamentos.Image = ((System.Drawing.Image)(resources.GetObject("btnDepartamentos.Image")));
             this.btnDepartamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartamentos.Location = new System.Drawing.Point(335, 4);
+            this.btnDepartamentos.Location = new System.Drawing.Point(364, 3);
             this.btnDepartamentos.Name = "btnDepartamentos";
-            this.btnDepartamentos.Size = new System.Drawing.Size(128, 48);
+            this.btnDepartamentos.Size = new System.Drawing.Size(151, 48);
             this.btnDepartamentos.TabIndex = 4;
             this.btnDepartamentos.Text = "Departamentos ";
             this.btnDepartamentos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDepartamentos.UseVisualStyleBackColor = true;
+            this.btnDepartamentos.Click += new System.EventHandler(this.btnDepartamentos_Click);
             // 
             // btnEliminarProducto
             // 
+            this.btnEliminarProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarProducto.Image")));
             this.btnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarProducto.Location = new System.Drawing.Point(222, 4);
+            this.btnEliminarProducto.Location = new System.Drawing.Point(246, 4);
             this.btnEliminarProducto.Name = "btnEliminarProducto";
-            this.btnEliminarProducto.Size = new System.Drawing.Size(107, 48);
+            this.btnEliminarProducto.Size = new System.Drawing.Size(112, 48);
             this.btnEliminarProducto.TabIndex = 3;
             this.btnEliminarProducto.Text = "Eliminar";
             this.btnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminarProducto.UseVisualStyleBackColor = true;
+            this.btnEliminarProducto.Click += new System.EventHandler(this.btnEliminarProducto_Click);
             // 
             // btnModificarProducto
             // 
             this.btnModificarProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnModificarProducto.Image")));
             this.btnModificarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificarProducto.Location = new System.Drawing.Point(109, 4);
+            this.btnModificarProducto.Location = new System.Drawing.Point(124, 3);
             this.btnModificarProducto.Name = "btnModificarProducto";
-            this.btnModificarProducto.Size = new System.Drawing.Size(107, 48);
+            this.btnModificarProducto.Size = new System.Drawing.Size(116, 48);
             this.btnModificarProducto.TabIndex = 2;
             this.btnModificarProducto.Text = "Modificar ";
             this.btnModificarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -114,6 +119,7 @@
             this.pnlProductosPrincipal.Name = "pnlProductosPrincipal";
             this.pnlProductosPrincipal.Size = new System.Drawing.Size(751, 657);
             this.pnlProductosPrincipal.TabIndex = 3;
+            this.pnlProductosPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlProductosPrincipal_Paint);
             // 
             // ProductosControl
             // 

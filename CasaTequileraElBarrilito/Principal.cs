@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CasaTequileraElBarrilito
 {
-    public partial class Ventas : Form
+    public partial class Principal : Form
     {
-        public Ventas()
+        public Principal()
         {
             InitializeComponent();
             
@@ -71,8 +71,10 @@ namespace CasaTequileraElBarrilito
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            Productos productos = new Productos();
-            productos.Show();
+            pnlPrincipal.Controls.Clear(); // Limpiar el panel antes de agregar un nuevo control
+            ProductosControl productosControl = new ProductosControl();// Crear una instancia del UserControl que deseas mostrar
+            productosControl.Dock = DockStyle.Fill;// Ajustar el UserControl para que llene el panel
+            pnlPrincipal.Controls.Add(productosControl);// Agregar el UserControl al panel
         }
     }
 }

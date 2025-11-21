@@ -13,7 +13,6 @@ C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\bin\Debug\
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\Presentacion.csproj.AssemblyReference.cache
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Usuarios.resources
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Configuracion.resources
-C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Ventas.resources
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Login.resources
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Properties.Resources.resources
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\Presentacion.csproj.GenerateResource.cache
@@ -22,3 +21,8 @@ C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.exe
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.pdb
 C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.exe.config
+C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Productos.NuevoProducto.resources
+C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.ProductosControl.resources
+C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Principal.resources
+C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.VentasControl.resources
+C:\Users\valer\Source\Repos\UI_CasaTequilera\CasaTequileraElBarrilito\obj\Debug\CasaTequileraElBarrilito.Productos.Departamentos.resources

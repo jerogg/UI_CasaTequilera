@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionABaseDeDatos.cs" />
+    <Compile Include="Departamentos.cs">
+      <DependentUpon>ModelCasaTequilera.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.cs">
+      <DependentUpon>ModelCasaTequilera.tt</DependentUpon>
+    </Compile>
     <Compile Include="ModelCasaTequilera.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -69,11 +75,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelCasaTequilera.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Productos.cs">
+      <DependentUpon>ModelCasaTequilera.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rol.cs">
       <DependentUpon>ModelCasaTequilera.tt</DependentUpon>
     </Compile>
     <Compile Include="Seccion.cs">
+      <DependentUpon>ModelCasaTequilera.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SeccionBodega.cs">
       <DependentUpon>ModelCasaTequilera.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">

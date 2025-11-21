@@ -11,6 +11,7 @@ namespace Datos
     public class ConexionABaseDeDatos
     {
         CasaTequileraBarrilitoEntities1 casaTequileraBarrilitoEntities = new CasaTequileraBarrilitoEntities1();
+        
         public List<Usuario> ObtenerTodosUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario> ();
@@ -116,6 +117,42 @@ namespace Datos
 
             return usuarioEliminado;
         }
+        public List<Departamentos> ObtenerDatosDepartamentos()
+        {
+                       
+            List<Departamentos> departamentos = new List<Departamentos>();
+            try
+            {
+                departamentos = casaTequileraBarrilitoEntities.Departamentos.ToList();
+            }
+            catch (Exception ex)
+            {
 
+                throw ex;
+            }
+            return departamentos;
+
+        }
+
+        public bool EliminarDepartamento(int IdDepartamento)
+        {
+            Departamentos departamento = new Departamentos();
+            bool departamentoEliminado = false;
+            try
+            {
+                departamento = casaTequileraBarrilitoEntities.Departamentos.Where(Departamento => departamento.IdDepartamento == IdDepartamento).FirstOrDefault();
+                casaTequileraBarrilitoEntities.Departamentos.Remove(departamento);
+                casaTequileraBarrilitoEntities.SaveChanges();
+                departamentoEliminado = true;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return departamentoEliminado;
+        }
+        
     }
 }

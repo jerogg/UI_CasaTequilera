@@ -33,6 +33,7 @@ namespace CasaTequileraElBarrilito
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuarios));
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnImpresoraTicket = new System.Windows.Forms.Button();
             this.btnCajonBascula = new System.Windows.Forms.Button();
             this.btnGeneral = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -57,7 +58,6 @@ namespace CasaTequileraElBarrilito
             this.panel7 = new System.Windows.Forms.Panel();
             this.GuardarUsuarios = new System.Windows.Forms.Button();
             this.btnCancelarUsuario = new System.Windows.Forms.Button();
-            this.btnImpresoraTicket = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
@@ -77,6 +77,15 @@ namespace CasaTequileraElBarrilito
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(747, 50);
             this.panel5.TabIndex = 0;
+            // 
+            // btnImpresoraTicket
+            // 
+            this.btnImpresoraTicket.Location = new System.Drawing.Point(267, 3);
+            this.btnImpresoraTicket.Name = "btnImpresoraTicket";
+            this.btnImpresoraTicket.Size = new System.Drawing.Size(144, 39);
+            this.btnImpresoraTicket.TabIndex = 3;
+            this.btnImpresoraTicket.Text = "Impresora y Ticket";
+            this.btnImpresoraTicket.UseVisualStyleBackColor = true;
             // 
             // btnCajonBascula
             // 
@@ -227,7 +236,7 @@ namespace CasaTequileraElBarrilito
             this.pbxFotoUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("pbxFotoUsuarios.Image")));
             this.pbxFotoUsuarios.Location = new System.Drawing.Point(309, 14);
             this.pbxFotoUsuarios.Name = "pbxFotoUsuarios";
-            this.pbxFotoUsuarios.Size = new System.Drawing.Size(90, 83);
+            this.pbxFotoUsuarios.Size = new System.Drawing.Size(95, 100);
             this.pbxFotoUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFotoUsuarios.TabIndex = 7;
             this.pbxFotoUsuarios.TabStop = false;
@@ -291,32 +300,26 @@ namespace CasaTequileraElBarrilito
             // 
             // GuardarUsuarios
             // 
+            this.GuardarUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("GuardarUsuarios.Image")));
+            this.GuardarUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarUsuarios.Location = new System.Drawing.Point(329, 442);
             this.GuardarUsuarios.Name = "GuardarUsuarios";
-            this.GuardarUsuarios.Size = new System.Drawing.Size(132, 39);
+            this.GuardarUsuarios.Size = new System.Drawing.Size(152, 39);
             this.GuardarUsuarios.TabIndex = 4;
             this.GuardarUsuarios.Text = "Guardar Usuario";
+            this.GuardarUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarUsuarios.UseVisualStyleBackColor = true;
             this.GuardarUsuarios.Click += new System.EventHandler(this.GuardarUsuarios_Click);
             // 
             // btnCancelarUsuario
             // 
-            this.btnCancelarUsuario.Location = new System.Drawing.Point(463, 443);
+            this.btnCancelarUsuario.Location = new System.Drawing.Point(487, 443);
             this.btnCancelarUsuario.Name = "btnCancelarUsuario";
             this.btnCancelarUsuario.Size = new System.Drawing.Size(111, 39);
             this.btnCancelarUsuario.TabIndex = 4;
             this.btnCancelarUsuario.Text = "Cancelar";
             this.btnCancelarUsuario.UseVisualStyleBackColor = true;
             this.btnCancelarUsuario.Click += new System.EventHandler(this.btnCancelarUsuario_Click);
-            // 
-            // btnImpresoraTicket
-            // 
-            this.btnImpresoraTicket.Location = new System.Drawing.Point(267, 3);
-            this.btnImpresoraTicket.Name = "btnImpresoraTicket";
-            this.btnImpresoraTicket.Size = new System.Drawing.Size(144, 39);
-            this.btnImpresoraTicket.TabIndex = 3;
-            this.btnImpresoraTicket.Text = "Impresora y Ticket";
-            this.btnImpresoraTicket.UseVisualStyleBackColor = true;
             // 
             // Usuarios
             // 

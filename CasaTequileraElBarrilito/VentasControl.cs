@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CasaTequileraElBarrilito.Productos
+namespace CasaTequileraElBarrilito
 {
-    public partial class Departmentos : UserControl
+    public partial class VentasControl : UserControl
     {
-        public Departmentos()
+        public VentasControl()
         {
             InitializeComponent();
         }
